@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width:80%;
+	margin: 0 auto;
+	height:90%;
 }
 ol, ul {
 	list-style: none;
@@ -49,12 +52,13 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +68,106 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+nav div{
+	display: inline-block;
+	
+}
+nav div a{
+	
+	margin: 3px auto;
+	padding: 20px;
+	text-decoration: none;
+	color:grey;
+}
+nav div a:hover{
+	
+	animation-name: Navi;
+	animation-duration: 3s;
+}
+
+@keyframes Navi{
+	from{	}
+	to{
+		background-color: black;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+
+nav{
+	display: block;
+	text-align: center;
+}
+header{
+	display: block;
+	margin: 0 auto;
+	padding: 0px 10%;
+}
+.TopTitle{
+	display: inline-block;
+	padding: 15%;
+	text-align: center;
+	font-family: 'bangers';
+	font-size: 50px;
+	
+}
+.TopTitle a{
+	border: solid 1px black;
+	color: black;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	padding: 1px 40px;
+}
+.TopTitle a:hover{
+	animation-name: GetStart;
+	animation-duration: 1s;
+}
+@keyframes GetStart{
+	from{
+		border: solid 1px black;
+	}
+	to{
+		border: solid 5px blue;
+		
+	}
+}
+
+.TopImg{
+	display: inline-block;
+	padding: 30px 0px;
+}
+
+.TopSect{
+	display: block;
+	border-top: solid 1px black;
+}
+.TopSect div{
+	display: inline-block;
+	padding: 10px 3%;
+	width: 49%;
+}
+
+footer{
+	margin: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+.middle-img{
+	display: block;
+	margin: 0 auto;
+}
+.BottomSect{
+	display: block;
+	border-bottom: solid 1px black;
+}
+.BottomSect div{
+	display: inline-block;
+	padding: 10px 1%;
+	width: 33%;
+}
+address{
+	padding-top: 20px;
+}
